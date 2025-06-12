@@ -1,20 +1,104 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Filippo Baldo</title>
-  <link rel="icon" type="image/png" href="favicon.png">
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    h1 { font-size: 3em; }
-    p { font-size: 1.2em; color: #555; }
-    a { color: #0077cc; text-decoration: none; }
+    @font-face {
+      font-family: 'TradeGothicExtended';
+      src: url('TradeGothicLTExtended.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'PlainLight';
+      src: url('Plain-Light.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'MonumentExtended';
+      src: url('MonumentExtended-Ultrabold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'PlainLight', sans-serif;
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'TradeGothicExtended', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #000;
+      color: #000;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    footer p {
+      font-family: 'MonumentExtended', sans-serif;
+      letter-spacing: 0.05em;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Ciao, sono Filippo</h1>
-  <p>Designer & creativo. Presto online il mio nuovo sito.</p>
-  <p><a href="mailto:ciao@filippobaldo.com">Contattami</a></p>
+  <h1>FILIPPO BALDO</h1>
+  <p>Graphic Designer based in Brescia (IT)</p>
+  <p><a href="mailto:effe.baldo@gmail.com">effe.baldo@gmail.com</a></p>
+  <p><a href="https://instagram.com/filippobaldo.zen" target="_blank">@filippobaldo.zen</a></p>
+
+  <div class="buttons">
+    <a href="https://instagram.com/filippobaldo.zen" target="_blank">INSTAGRAM</a>
+    <a href="mailto:effe.baldo@gmail.com">LET’S WORK</a>
+  </div>
+
+  <footer>
+    <p>HUMAN – <a href="https://instagram.com/humansoundsystem" target="_blank">@humansoundsystem</a></p>
+  </footer>
 </body>
 </html>
